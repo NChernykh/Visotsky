@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visotsky Modal</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="visually-hidden">Модальное окно</h1>
+  <div class="container">
+    <button data-modal class="button">Click Me!</button>
+  </div>
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div data-close class="modal__close">&times;</div>
+        <div class="modal__right">
+          <span class="modal__back-text">ПОШ</span>
+          <span class="modal__back-text">АГО-</span>
+          <span class="modal__back-text">ВЫЙ</span>
+          <span class="modal__back-text">ПЛАН</span>
+          <div class="modal__img">
+            <picture>
+              <source type="image/webp" srcset="img/book.webp, img/book@2x.webp 2x">
+              <img src="img/book.png" srcset="img/book@2x.png 2x" alt="book" width="394" height="337">
+            </picture>
+          </div>
+        </div>
+        <div class="modal__left">
+          <h2 class="modal__title title">мастер-класс?</h2>
+          <span class="text-md">Скачайте пошаговый план</span>
+          <span class="text-lg">&laquo;Как собственнику выйти из&nbsp;операционки&raquo;</span>
+          <span class="text-md">и&nbsp;познакомьтесь с&nbsp;этим инструментом<br/><b>прямо сейчас</b></span>
+          <span class="text-sm">10 шагов помогут создать системный бизнес</span>
+          <form class="form" action="#">
+            <label>
+              <span class="label text-sm"> Для получения бонуса введите email</span>
+              <input required placeholder="Ваш e-mail" name="email" type="email" class="input">
+            </label>
+            <button class="button">Скачать пошаговой план</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bundle.js"></script>
+</body>
+</html>
